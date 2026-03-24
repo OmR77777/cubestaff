@@ -1,0 +1,51 @@
+name: CubeSTAFF
+version: 4.0
+main: omr.cubeSTAFF.CubeSTAFF
+api-version: "1.21"
+authors: [CubeMC]
+depend: [LuckPerms, Vault]
+softdepend: [CubeDiscordLink]
+commands:
+  staffstats:
+    description: stats
+    usage: /staffstats [player]
+  stafftop:
+    description: top staff
+    usage: /stafftop
+  staffgui:
+    description: staff gui
+    usage: /staffgui
+  staffchat:
+    description: staff chat
+    usage: /staffchat <msg>
+    aliases: [sc]
+  staffwarn:
+    description: warn staff
+    usage: /staffwarn <player> <reason>
+  staffunwarn:
+    description: unwarn
+    usage: /staffunwarn <player> <num>
+  vacation:
+    description: vacation
+    usage: /vacation <player> <on/off>
+  staffreload:
+    description: reload
+    usage: /staffreload
+  staffscan:
+    description: scan staff
+    usage: /staffscan
+  dailytop:
+    description: daily top
+    usage: /dailytop
+  testnotif:
+    description: test notif
+    usage: /testnotif
+permissions:
+  cubestaff.use:
+    default: false
+  cubestaff.warn:
+    default: op
+  cubestaff.vacation:
+    default: op
+  cubestaff.admin:
+    default: op
